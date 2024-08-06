@@ -7,10 +7,18 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h3>adicionando uma lista com o .append();</h3>
-    <ul class="lister"> minhalista</ul>
+    <h3>seletor de filtragem</h3>
+
+    <ul>
+        <li>uma</li>
+        <li>lista</li>
+        <li>3 linhas</li>
+    </ul>
 <script>
-    $('ul.lister').append('<li>um carro</li>');
+$("li:first('lista')").css('color','red')
+
+
+
 </script>
 </body>
 </html>

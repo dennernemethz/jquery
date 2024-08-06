@@ -7,10 +7,17 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h3>adicionando uma lista com o .append();</h3>
-    <ul class="lister"> minhalista</ul>
+    <h3>multiplo seletores</h3>
+
+    <div id="c1">html</div>
+    <div id="c2">css</div>
+    <div id="c3">js</div>
+    <div id="c4">jq</div>
+    <div id="c5">mysql</div>
+    <div id="c6">python</div>
 <script>
-    $('ul.lister').append('<li>um carro</li>');
+    $("#c1, #c2, #c3").css('color','red')
+    $("#c4, #c5, #c6").css('color','blue')
 </script>
 </body>
 </html>
