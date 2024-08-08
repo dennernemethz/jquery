@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3>removendo um  elemento com hide</h3>
+    <button class="botaoParaEliminar">clique</button>
+    <div class="c1">azul</div>
+    <div class="c2">amarelo</div>
+    <div class="c3">vermelho</div>
+    <div class="c4">roxo</div>
+    <div class="c5">laranja</div>
+    <div class="c6">verde</div>
+    <div class="c7">lilas</div>
+    <div class="c8">magenta</div>
+
+<script>
+    $(document).ready(function(){
+      $('.botaoParaEliminar').click(function(){
+        $('.c2').hide()
+        
+      })
+    })
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+            let n1 = 10
+            let n2 = 20
+            let soma = n1 + n2 
+            $('p').html(`a soma de ${n1} e ${n2} é igual a ${soma}`)
+
+        })
+      })
+    </script>
+</head>
+<body>
+    <h2>somos</h2>
+    <button class="btn">clique</button>
+    <p>resultado</p>
+</body>
+</html>

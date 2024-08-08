@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+       $('.btn').click(function(){
+        let n1 = 10
+        let n2 = 40
+        let soma = n1 + n2
+       $('.numero').html(`o valor de n1 é ${n1} e o valor de n2 é ${n2} e a soma entre eles é ${soma}` )
+       })
+    })
+</script>
+</head>
+<body>
+    <h2> usando jq na parte head </h2>
+    <p>fazendo rodar com a funcção .ready()</p>
+    <button class="btn">clique</button>
+    <div class="numero">resultado</div>
+
+    
+</body>
+</html>
