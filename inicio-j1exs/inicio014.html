@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    
 </head>
 <body>
-    <h3>somas</h3>
-    <button class="msg">clique!</button>
+    <div>dia dos pais</div>
+    <h4>testando</h4>
+    <button class="msg">clique</button>
+
 <script>
-$('.msg').click(function(){
-   var n1 = 1 
-   var n2 =10
-   var soma = n1 + n2
-   alert(soma)
-})
+$(document).ready(function(){
+    $('.msg').click(function(){
+        $('h4').fadeIn(2000);
+    });
+    $('.msg').click(function(){
+        $('h4').fadeOut(2000);
+    });
+});
 </script>
 </body>
 </html>
