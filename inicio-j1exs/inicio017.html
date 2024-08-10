@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,21 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <style>
         .msg{
-            width: 200px;
-            height: 150px;
-            background-color: black;
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
             margin: auto;
-            color: wheat;
-            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="msg"> fundo</div>
+    <div class="msg">fundo</div>
 <script>
     $(document).ready(function () {
-        $('.msg').click(function () {
-            $('.msg').css('background-color','red')
-         
-          })
-      });
+       $('.msg').click(function () {
+        $('.msg').css('background-color','red')
+         })
+      })
 </script>
 </body>
 </html>
