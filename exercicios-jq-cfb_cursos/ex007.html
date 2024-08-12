@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .c1{
+            background-color: darkgray;
+            width: 100px;
+            color: blueviolet;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        .c2{
+            background-color: darkgray;
+            width: 100px;
+            border: 1px solid black;
+            color: brown;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h3> Usando metodo trigger();</h3>
+    <p class="c1">FLEX 1</p>
+    <P class="c2">FLEX 2</P>
+    <p class="text">mudar</p>
+
+<script>
+     $('.c1').click(function () {
+         $('.text').html('clqueiee')
+  })
+  $('.c2').click(function(){
+    $('.c1').trigger('click')
+  })
+</script>
+</body>
+</html>

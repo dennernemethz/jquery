@@ -6,23 +6,51 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <style>
-        div#pai{
-            background-color: black;
+        .conteiner{
+            display: flex;
+            justify-content: space-around;
+        }
+        .c1{
             width: 100px;
-            height: 100px;
-            color: white;
+            height: 35px;
+            background-color: darkgray;
+            border: 1px solid black;
+            color: darkred;
+
+        }
+        .c2{
+            width: 100px;
+            height: 35px;
+            background-color: darkgray;
+            border: 1px solid black;
+            color: darkviolet;
+
+        }
+        .c3{
+            width: 100px;
+            height: 35px;
+            background-color: darkgray;
+            border: 1px solid black;
+            color: darkslategrey;
+
         }
     </style>
 </head>
 <body>
-    <div id="pai">FUNDO</div>
-    <p id="text"></p>
+    <div class="conteiner">
+        <div class="c1">flex1</div>
+        <div class="c2">flex2</div>
+        <div class="c3">flex3</div>
+    </div>
+    <p class="mud">TEXTO</p>
 <script>
-    $('#pai').on({
-        click:function(){ $('#text').text('cliquei')},
-        mouseenter:function(){$('#text').text('entrei')},
-        mouseleave:function () {$('#text').text('sai')}
-    });
+$('.c1').click(function () {
+    $('.mud').html('mudando e codificando esse codigo')
+  })
+$('.c2').click(function () {
+    $('.c1').trigger('click')
+  })
+
 </script>
 </body>
 </html>
