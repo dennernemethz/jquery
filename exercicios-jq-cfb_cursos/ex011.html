@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="c1">curso</div>
+    <div class="c2">html</div>
+    <div class="c3">css</div>
+    <p id="res">resul</p>
+
+<script>
+    $(document).click((e)=>{
+        $('#res').text('clicou no :' + e.target.tagName)
+        if(e.target.tagName == 'resul'){
+            alert('clicou no res')
+        }
+
+
+    })
+</script>
+</body>
+</html>
