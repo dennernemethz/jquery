@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+button {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px #999; 
+}
+
+button:hover {
+    background-color: #007bb5;
+    transition-duration: 1.6s;
+}
+
+button:active {
+    background-color: #007bb5;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px); 
+}
+button:hover{
+    color: black;
+    font-weight: bold;
+}
+.cont {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+h2{
+    text-shadow: 1px 2px #007bb5;
+    padding: 10px;
+
+}
+main{
+   background-color: lightgray;
+   width: 500px;
+   height: 300px;
+   margin: auto;
+   border-radius: 10px;
+   box-shadow: 0px 5px darkgrey;
+
+}
+.cont{
+    text-shadow: 2px 2px white;
+}
+
+    </style>
+</head>
+<body>
+<main>
+    <h2> Projeto 1 Incremento e Decremento</h2>
+        <p class="cont"> 0</p>
+        <button class="incremento">incrementar</button>
+        <button class="decremento">decrementar</button>
+</main>
+
+<script>
+
+const cont = window.document.querySelector('.cont')
+
+let contador = 0
+
+function toUpper() {
+    cont.textContent=contador
+  }
+
+$('.incremento').click(function () {
+    contador++;
+    toUpper()
+  })
+
+$('.decremento').click(function () {
+    contador--;
+    toUpper()
+  })
+
+</script>
+
+</body>
+</html>
