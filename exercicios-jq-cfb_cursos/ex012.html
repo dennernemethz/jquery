@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<style>
+#q1{
+    border: 1px solid blue;
+    padding: 3px;
+}
+
+#q2{
+    border: 1px solid red;
+    padding: 3px;
+}
+#q3{
+    border: 1px solid green;
+    padding: 3px;
+}
+
+#q4{
+    border: 1px solid yellow;
+    padding: 3px;
+}
+</style>
+
+</head>
+<body>
+<div id="q1">quadrado 1
+    <div id="q2">quadrado 2
+        <div id="q3">quadrado 3
+            <div id="q4">quadrado 4
+            </div>
+        </div><br>
+    </div><br>
+</div><br>
+    
+    
+<script>
+
+  $('#q1').click(function () {
+    alert('voce clicou no quadrado 1')
+  })
+  $('#q2').click(function () {
+    event.stopPropagation(alert('voce clicou no quadrado 2')) 
+  })
+  $('#q3').click(function () {
+   event.stopPropagation(alert('voce clicou no quadrado 3')) 
+  })
+  $('#q4').click(function () {
+    event.stopPropagation(alert('voce clicou no quadrado 4')) 
+  }) 
+  
+  
+  
+
+</script>
+</body>
+</html>

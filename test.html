@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
-
 </head>
 <body>
-    <h3>clique para saber a hora</h3>
-   <div id="clock"></div>
-   <button id="btn">clique</button>
-<script>
-let clock = window.document.querySelector('#clock')
+    <div id="res">0</div>
+    <button class="incremento">incrementar</button>
+    <button class="decrementar">decrementar</button>
+    <script>
+
+let res = window.document.querySelector('#res');
+//let inc = window.document.querySelector('.incremento')
+//let decr = window.document.querySelector('.decremento')
+
+let contador = 0;
 
 
+function up() { 
+   res.textContent=contador
+ }
 
 
-$('#btn').on('click',()=>{
-    setInterval(() => {
-        let tempo =  new Date();
-        clock.innerHTML= `agora são ${tempo.toLocaleTimeString()}  HAORARIO DE BRASILIA`;
-    }, 1000);
+$('.incremento').click(function(){
+    contador++
+    up();
+while(contador>10){
+    alert('chegou ao fim')
+    break;
+}
+   
 });
-</script>
 
+$('.decrementar').click(function(){
+    contador--
+    up();
+});
+    
+</script>
 </body>
 </html>
