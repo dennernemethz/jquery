@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+main{
+      border: 1px solid black;
+      width: 800px;
+      height: 300px;
+}
+.cross{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100px;
+    height: 70px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 3px;
+}
+
+h1{
+    text-align: center;
+}
+     
+
+    </style>
+</head>
+<body>
+    <h1>mudando a cor dos quadrados com eventos</h1>
+    <main>
+        <div class="cross" id="q1">quadrado01</div>
+        <div class="cross" id="q2">quadrado02</div>
+        <div class="cross" id="q3">quadrado03</div>
+        <div class="cross" id="q4">quadrado04</div>
+        <div class="cross" id="q5">quadrado05</div>
+        <div class="cross" id="q6">quadrado06</div>
+        <div class="cross" id="q7">quadrado07</div>
+
+    </main>
+
+<script>
+$(document).click(function () {
+    alert('OPSS!! você clicou no html')
+  })
+
+$('main').click(function () {
+    event.stopPropagation(  alert('clique em um dos quadrados'))
+  })
+
+$('#q1').click(function () {
+    event.stopPropagation(alert('quadrado01'))
+    $('#q1').text('01')
+    $('#q1').css('background-color', 'red')
+    $('#q1').css('text-align','center')
+  })
+  $('#q2').click(function () {
+    event.stopPropagation(alert('quadrado02'))
+    $('#q2').text('02')
+    $('#q2').css('background-color', 'blue')
+    $('#q2').css('text-align','center')
+  })
+  $('#q3').click(function () {
+    event.stopPropagation(alert('quadrado03'))
+    $('#q3').text('03')
+    $('#q3').css('background-color', 'yellow')
+    $('#q3').css('text-align','center')
+  })
+  $('#q4').click(function () {
+    event.stopPropagation(  alert('quadrado04'))
+    $('#q4').text('04')
+    $('#q4').css('background-color', 'hotpink')
+    $('#q4').css('text-align','center')
+  })
+  $('#q5').click(function () {
+    event.stopPropagation(alert('quadrado05'))
+    $('#q5').text('05')
+    $('#q5').css('background-color', 'cyan')
+    $('#q5').css('text-align','center')
+  })
+  $('#q6').click(function () {
+    event.stopPropagation(alert('quadrado06'))
+    $('#q6').text('06')
+    $('#q6').css('background-color', 'orange')
+    $('#q6').css('text-align','center')
+  })
+
+  $('#q7').click(function () {
+    event.stopPropagation()
+    $('#q7').css('background-color', 'gray')
+    })
+    $('#q7').dblclick(function(){
+        $('#q7').css('background-color', 'blueviolet')
+    })
+
+</script>
+</body>
+</html>
