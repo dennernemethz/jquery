@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+body{
+    background-color: gray;
+   
+}
+.cross{
+    display: inline-block;
+    align-items: center;
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    
+}
+    </style>
+</head>
+<body>
+    <h1>usando o metodo parent()</h1>
+    <main>
+        <div class="cross" id="c1">quadrado1</div>
+        <div class="cross" id="c2">quadrado2</div>
+        <div class="cross" id="c3">quadrado3</div>
+        <div class="cross" id="c4">quadrado4</div>
+    </main>
+
+<script>
+$('div').parent().css({'border':'3px solid white'})
+$('div').parent().css('background-color','violet')
+$('div').parent().css({'width':'500px'})
+$('div').parent().css({'height': '200px'})
+
+$('main').click(function () { 
+    alert('clicou no html')
+ })
+ $('#c1').click(function () {
+   event.stopPropagation(alert('clicou no quadrado 01 ')) 
+    $('#c1').css('color','gray')
+    $('#c1').css('background-color','red')
+    $('#c1').css({'border':'2px solid black'})
+   })
+$('#c2').click(function () {
+    event.stopPropagation(alert('clicou no quadrado 02 ')) 
+    $('#c2').css('color','black')
+    $('#c2').css('background-color','orange')
+    $('#c2').css({'border':'2px solid black'})
+   })
+$('#c3').click(function () {
+    event.stopPropagation( alert('clicou no quadrado 03 '))
+    $('#c3').css('color','cyan')
+    $('#c3').css('background-color','blue')
+    $('#c3').css({'border':'2px solid black'})
+   })
+$('#c4').click(function () {
+    event.stopPropagation( alert('clicou no quadrado 04 '))
+    $('#c4').css('color','yellow')
+    $('#c4').css('background-color','black')
+    $('#c4').css({'border':'2px solid white'})
+   })
+
+</script>
+</body>
+</html>
