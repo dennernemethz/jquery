@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+<button id="clicar">
+    <ul>
+        <li>pr 01</li>
+        <li>pr 01</li>
+        <li>pr 01</li>
+    </ul>
+    <ul>
+        <li>pr 02</li>
+        <li>pr 02</li>
+        <li>pr 02</li>
+    </ul>
+</button>
+<script>
+
+$('#clicar').click(function () {
+    $('#clicar').children().css('background-color','red')
+  })
+
+</script>
+</body>
+</html>
