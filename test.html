@@ -12,7 +12,17 @@
           height: 120px;
           background-color: gray;
 
-      }
+        }
+    article{
+        background-color: #f0f0f0; /* Light gray background color */
+        border: 0.1em solid #ccc; /* Border with a thickness relative to the font-size */
+        padding: 2em; /* Padding relative to the font-size */
+        border-radius: 0.5em; /* Rounded corners relative to the font-size */
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1); /* Shadow with dimensions relative to the font-size */
+        font-size: 1em; /* Base font-size */
+         }
+
+
     </style>
 </head>
 <body>
@@ -27,7 +37,30 @@
     </article>
 
     <script>
-
+$('article').click(function () {
+    alert('voce clicou em article e nao nos quadrados !!!!!!')
+  })
+  $('#q1').click(function () {
+   event.stopPropagation( alert('clicou no quadrado 01')) 
+    })
+    $('#q2').click(function () {
+        event.stopPropagation( alert('clicou no quadrado 02'))
+    })
+    $('#q3').click(function () {
+        event.stopPropagation(  alert('clicou no quadrado 03'))
+    })
+    $('#q4').click(function () {
+        event.stopPropagation(  alert('clicou no quadrado 04'))
+    })
+    $('#q5').click(function () {
+        event.stopPropagation( alert('clicou no quadrado 05'))
+    })
+    $('#q6').click(function () {
+        event.stopPropagation(  alert('clicou no quadrado 06'))
+    })
+    $('#q7').click(function () {
+        event.stopPropagation( alert('clicou no quadrado 07'))
+    })
     </script>
 </body>
 </html>
