@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<style>
+.cross{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+    border-radius: 2px;
+    border: 1px solid black;
+    width: 120px;
+    height: 120px;
+    color: white;
+}
+main{
+    background-color: darkgrey;
+    width:600px ;
+    height: 150px;
+}
+
+</style>
 </head>
 <body>
-    <h3> fazendo os quadrados sumirem com click ;)</h3>
+    <h3> clique nos quadrados para eles sumirem </h3>
+
+
+
+<main>
+      <div class="cross" id="q1">QUADRO01</div>
+      <div class="cross" id="q2">QUADRO02</div>
+      <div class="cross" id="q3">QUADRO03</div>
+      <div class="cross" id="q4">QUADRO04</div>
+</main>
+
+    <script>
+$('main').click(function () { 
+    alert('voce clicou no main e nao nos quadrados')
+ })
+
+ $('#q1').click(function () {
+   event.stopPropagation( alert('clicou no quadrado 01 e agora ele vaiu sumir'))
+   $('#q1').hide(700)
+   })
+   $('#q2').click(function () {
+   event.stopPropagation( alert('clicou no quadrado 02 e agora ele vaiu sumir'))
+   $('#q2').hide(700)
+   })
+   $('#q3').click(function () {
+   event.stopPropagation( alert('clicou no quadrado 03 e agora ele vaiu sumir'))
+   $('#q3').hide(700)
+   })
+   $('#q4').click(function () {
+   event.stopPropagation( alert('clicou no quadrado 04 e agora ele vaiu sumir'))
+   $('#q4').hide(700)
+   })
+
+    </script>
 </body>
 </html>
