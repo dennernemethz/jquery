@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<style>
+    body{
+        background-color: darkgrey;
+    }
+main{
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    background-color: darkslategray;
+    border-radius: 10px;
+}
+.cross{
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 15px;
+    background-color: midnightblue;
+    color: whitesmoke;
+    width: 120px;
+    height: 100px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px white;
+    margin: auto;
+}
+#btn{
+    background-color: darkred;
+    color: white;
+    
+}
+</style>
+</head>
+<body>
+    <main>
+        <p class="cross" id="p1">paragrafo01</p>
+        <p class="cross" id="p2">paragrafo02</p>
+        <p class="cross" id="p3">paragrafo03</p>
+    </main>
+
+    <button id="btn">clicar</button>
+
+<script>
+
+$('#btn').click(function () {
+    $('#p1').toggle();
+  })
+
+</script>
+</body>
+</html>
