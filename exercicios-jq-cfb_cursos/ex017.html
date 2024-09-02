@@ -12,40 +12,21 @@
     width: 130px;
     height: 130px;
 }
-.vermelho{
-    border: 1px solid black;
-    width: 130px;
-    height: 130px;
-    background-color: red;
-}
-.azul{
-
-    border: 1px solid black;
-    width: 130px;
-    height: 130px;
-    background-color: blue;
-}
-
-
 
 
      </style>
 
 </head>
 <body>
-    <div id="caixa" class="vermelho">
+    <div class="caixa">
 
         <h3>Curso</h3>
         <p>jquery</p>
     </div>
-<button class="btn_red">vermelho</button>
-<button class="btn_blue">azul</button>
+
 <script>
-      $('.btn_red').click(function(){
-        $('#caixa').attr('class','vermelho')
-      })
-      $('.btn_blue').click(function(){
-        $('#caixa').attr('class','azul')
+    $('.caixa').click(function () {
+      alert(  $(this).attr('class'))
       })
 </script>
 </body>
