@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+ .amarelo{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: rgb(255, 221, 0);
+ }
+ .verde{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: rgb(45, 169, 14);
+ }
+ .azul{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: rgb(13, 0, 255);
+ }
+ .vermelho{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: red;
+ }
+    </style>
+
+</head>
+<body>
+<div id="caixa">
+    <h3>caixas</h3>
+    <p>cores</p>
+</div>
+<button class="btn_amarelo">amarelo</button>
+<button class="btn_vermelho">vermelho</button>
+<button class="btn_verde">verde</button>
+<button class="btn_azul">azul</button>
+
+<script>
+$('.btn_amarelo').click(function () {
+    $('#caixa').attr('class','amarelo')
+  })
+  $('.btn_vermelho').click(function () {
+    $('#caixa').attr('class','vermelho')
+  })
+  $('.btn_azul').click(function () {
+    $('#caixa').attr('class','azul')
+  })
+  $('.btn_verde').click(function () {
+    $('#caixa').attr('class','verde')
+  })
+
+
+
+</script>
+</body>
+</html>
