@@ -4,49 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-     <style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        div#quadrado01{
 
-.caixa{
-    border: 1px solid black;
-    width: 130px;
-    height: 130px;
-}
-.vermelho{
-    border: 1px solid black;
-    width: 130px;
-    height: 130px;
-    background-color: red;
-}
-.azul{
-
-    border: 1px solid black;
-    width: 130px;
-    height: 130px;
-    background-color: blue;
-}
-
-
-
-
-     </style>
-
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <div id="caixa" class="vermelho">
+    <h3>teste</h3>
 
-        <h3>Curso</h3>
-        <p>jquery</p>
+    <div id="quadrado01">
+        <p>quadrado</p>
     </div>
-<button class="btn_red">vermelho</button>
-<button class="btn_blue">azul</button>
-<script>
-      $('.btn_red').click(function(){
-        $('#caixa').attr('class','vermelho')
-      })
-      $('.btn_blue').click(function(){
-        $('#caixa').attr('class','azul')
-      })
-</script>
+
+    <div id="quadrado2" class="r2">
+          
+        <p>quadrado</p>
+    </div>
+    <script>
+$('#quadrado01').click(function(){
+    alert($(this).attr('id'))
+})
+
+
+    </script>
 </body>
 </html>
