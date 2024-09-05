@@ -5,32 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <style>
-        div#quadrado01{
-
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-        }
-    </style>
 </head>
+<div class="q1">
+    <h1>titulo</h1>
+    <p>paragrafo</p>
+</div>
 <body>
-    <h3>teste</h3>
-
-    <div id="quadrado01">
-        <p>quadrado</p>
-    </div>
-
-    <div id="quadrado2" class="r2">
-          
-        <p>quadrado</p>
-    </div>
     <script>
-$('#quadrado01').click(function(){
-    alert($(this).attr('id'))
-})
-
-
+$('.q1').click(function () {
+   alert( $(this).attr('class'))
+  })
     </script>
 </body>
 </html>

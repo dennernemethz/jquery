@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+ div{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: justify;
+
+ }
+    </style>
 </head>
 <body>
+    <main>
     
+        <div class="croos" id="quadrado01"><p>Quadrado</p></div>
+        <div class="croos" id="quadrado02"><p>Quadrado</p></div>
+        <div class="croos" id="quadrado03"><p>Quadrado</p></div>
+        <div class="croos" id="quadrado04"><p>Quadrado</p></div>
+    </main>
+
+<script>
+$('#quadrado01').click(function(){
+    alert($(this).attr('id'))
+    $('#quadrado01').css('background-color','red')
+    $('#quadrado01').html('clicado')
+})
+$('#quadrado02').click(function(){
+    alert($(this).attr('id'))
+    $('#quadrado02').css('background-color','red')
+    $('#quadrado02').html('clicado')
+})
+$('#quadrado03').click(function(){
+    alert($(this).attr('id'))
+    $('#quadrado03').css('background-color','red')
+    $('#quadrado03').html('clicado')
+})
+$('#quadrado04').click(function(){
+    alert($(this).attr('id'))
+    $('#quadrado04').css('background-color','red')
+    $('#quadrado04').html('clicado')
+ 
+
+})
+
+
+</script>
 </body>
 </html>
