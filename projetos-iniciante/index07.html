@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .croos{
+             display: inline-block;
+             background-color: gray;
+             width: 200px;
+             height: 150px;
+             color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="croos" id="q1">verde</div>
+        <div class="croos" id="q2">roxo</div>
+    </div>
+
+<script>
+$('#q1').hover(function(){
+    $(this).css('background-color','green')
+},function () {  
+    $(this).css('background-color','gray')
+}
+)
+$('#q2').hover(function(){
+    $(this).css('background-color','purple')
+},function () {  
+    $(this).css('background-color','gray')
+}
+)
+</script>
+</body>
+</html>
